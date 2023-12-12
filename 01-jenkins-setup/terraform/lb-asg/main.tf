@@ -10,5 +10,5 @@ module "lb-asg" {
   key_name      = "techiescamp"
   environment   = "dev"
   vpc_id        = "vpc-0a5ca4a92c2e10163"
-  public_ip     = true
+  public_ip     = false
 }
