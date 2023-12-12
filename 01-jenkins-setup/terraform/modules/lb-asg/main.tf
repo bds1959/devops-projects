@@ -105,7 +105,7 @@ resource "aws_launch_template" "jenkins" {
   key_name      = var.key_name
 
   network_interfaces {
-    associate_public_ip_address = true
+    associate_public_ip_address = var.public_ip
     security_groups             = [aws_security_group.instance_sg.id]
   }
 }
