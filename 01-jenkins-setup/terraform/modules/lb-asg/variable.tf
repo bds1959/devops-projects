@@ -22,3 +22,6 @@ variable "subnets" {
   description = "A list of subnet IDs to use for the resources."
   type        = list(string)
 }
+variable "public_ip" {
+  description = "The ID of the public_ip to use for the resources."
+}
